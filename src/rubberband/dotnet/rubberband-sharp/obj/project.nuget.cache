@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "inIj4ROekXRSER8LjYtB/UJujnWz3FSbXPUfwJ0D7LuA4Yxdfhb82ZIn6W1OcJ32/zH7yMDkJimvc0J9UbtRew==",
+  "success": true,
+  "projectFilePath": "E:\\_proj\\rubberband\\dotnet\\rubberband-sharp\\rubberband-sharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lvyu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lvyu\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
