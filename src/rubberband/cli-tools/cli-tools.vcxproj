@@ -86,7 +86,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Program Files\Mega-Nerd\libsndfile\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\_proj\rubberband\otherbuilds\x64\Debug;C:\Program Files\Mega-Nerd\libsndfile\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>E:\_proj\rubberband\otherbuilds\x64\Debug;C:\Program Files\Mega-Nerd\libsndfile\lib;$(ProjectDir)..\otherbuilds\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
