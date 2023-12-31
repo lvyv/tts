@@ -4,7 +4,7 @@ import torch
 import math
 import logging
 from TTS.api import TTS
-import t2s.backend as bke
+import backend as bke
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s  - %(filename)s:%(lineno)d', datefmt='%y-%m-%d '
                                                                                                            '%I:%M:%S '
@@ -85,12 +85,12 @@ if __name__ == '__main__':
     device = "cuda" if torch.cuda.is_available() else "cpu"
     tts_eng = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
     #
-    in_file = 'Intro2LLM-cn.json'
-    out = 'out_stretch'
-    sp_wav = "result/nb2/lzl.wav"
+    in_file = 'input/Intro2LLM-cn.json'
+    out = 'output'
+    sp_wav = "input/lzl.wav"
     generate_wav(tts_eng, in_file, out, sp_wav)
 
-    bke.concatenate_wav_files(out, 'output.wav')
+    bke.concatenate_wav_files(out, 'output/output.wav')
 
     # json字幕转srt
     convert_json_to_srt(in_file)
